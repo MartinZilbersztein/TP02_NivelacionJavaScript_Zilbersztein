@@ -117,21 +117,22 @@ formulario9.addEventListener('submit', function(){
 }  )
 */
 
-/*EJERCICIO 10
+/* EJERCICIO 10
 const formulario10 = document.getElementById('ejercicio10');
 let contador = 0;
 formulario10.addEventListener('submit', function(){
     const palabra = document.getElementById('palabra').value.toLowerCase();
-    let contador1 = 0, contador2 = palabra.length-1;
     event.preventDefault();
-    while (palabra[contador1] == palabra[contador2] && contador1 != contador2)
+    let contador1 = 0, contador2 = palabra.length-1;
+    while (palabra[contador1] == palabra[contador2] && contador1 < contador2)
     {
         contador1++;
         contador2--;   
     }
-    if (contador1 != contador2)
-        console.log("No es palíndromo");
-    else console.log("Es palíndromo")
+    if (contador1 == contador2 || contador1-1 == contador2)
+    console.log("Es palíndromo");
+    else console.log("No es palíndromo");
+    
 }  )*/
 
 
